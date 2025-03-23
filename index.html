@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Space Meteor Attack</title>
+
+
+  <!-- Google Fonts: Orbitron (futuristic) & Roboto -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Roboto&display=swap"
+    rel="stylesheet"
+  >
+  <link rel="stylesheet" href="style.css">
+
+  <!-- SweetAlert2 (for popup dialogs) -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+  <h1>Space Meteor Attack</h1>
+
+  <div class="wrapper">
+    <div id="gameContainer">
+      <div id="controls">
+        <label for="difficulty">Difficulty:</label>
+        <select id="difficulty">
+          <option value="easy">Easy</option>
+          <option value="medium" selected>Medium</option>
+          <option value="hard">Hard</option>
+        </select>
+
+        <!-- gumbi: start, stop, resume, reset -->
+        <button id="startBtn" onclick="startGame()">Start Game</button>
+        <button id="stopBtn" onclick="stopGame()" style="display:none;">Stop Game</button>
+        <button id="resumeBtn" onclick="resumeGame()" style="display:none;">Resume Game</button>
+        <button id="resetBtn" onclick="resetGame()" style="display:none;">Reset Game</button>
+      </div>
+
+      <canvas id="myCanvas" width="480" height="320"></canvas>
+      <div id="timerDisplay">Time: 0.00s</div>
+    </div>
+  </div>
+</body>
+</html>
