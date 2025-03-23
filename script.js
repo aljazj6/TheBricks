@@ -199,7 +199,7 @@
   stopGame();
   if (won) {
     Swal.fire({
-      title: '🚀 Victory!',
+      title: 'Victory!',
       text: 'You’ve obliterated all alien turrets. The galaxy is safe… for now.',
       icon: 'success',
       confirmButtonText: 'Play Again',
