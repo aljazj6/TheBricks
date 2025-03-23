@@ -200,7 +200,7 @@
   if (won) {
     Swal.fire({
       title: 'Victory!',
-      text: 'You’ve obliterated all alien turrets. The galaxy is safe… for now.',
+      text: 'You’ve destroyed all the enemies',
       icon: 'success',
       confirmButtonText: 'Play Again',
       background: '#1e1b2c',          // temna vijolično-modra
