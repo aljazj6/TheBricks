@@ -2,46 +2,41 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Alien Invasion</title>
+  <title>The Bricks</title>
 
-
-  <!-- Google Fonts: Orbitron (futuristic) & Roboto -->
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Roboto&display=swap"
-    rel="stylesheet"
-  >
-  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
 
-  <!-- SweetAlert2 (for popup dialogs) -->
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 <body>
-  <h1>Alien Invasion</h1>
-
+  <h1>The Bricks</h1>
   <div class="wrapper">
     <div id="gameContainer">
       <div id="controls">
-        <label for="difficulty">Difficulty:</label>
+        <label>Difficulty:</label>
         <select id="difficulty">
           <option value="easy">Easy</option>
           <option value="medium" selected>Medium</option>
           <option value="hard">Hard</option>
         </select>
-
-        <!-- gumbi: start, stop, resume, reset -->
-        <button id="startBtn" onclick="startGame()">Start Game</button>
-        <button id="stopBtn" onclick="stopGame()" style="display:none;">Stop Game</button>
-        <button id="resumeBtn" onclick="resumeGame()" style="display:none;">Resume Game</button>
-        <button id="resetBtn" onclick="resetGame()" style="display:none;">Reset Game</button>
+        <button id="startBtn" onclick="startGame()">Start</button>
+        <button id="stopBtn" onclick="stopGame()" style="display:none;">Stop</button>
+        <button id="resumeBtn" onclick="resumeGame()" style="display:none;">Resume</button>
+        <button id="resetBtn" onclick="resetGame()" style="display:none;">Reset</button>
+        <button id="infoBtn" onclick="showInfo()">Info</button>
       </div>
-
-      <canvas id="myCanvas" width="480" height="320"></canvas>
+      <canvas id="myCanvas" width="720" height="480"></canvas>
       <div id="timerDisplay">Time: 0.00s</div>
     </div>
   </div>
 
+  <audio id="impactSound" src="audio/hit2.aup3" preload="auto"></audio>
+
   <script src="script.js"></script>
+    
 </body>
 </html>
