@@ -10,9 +10,6 @@ Slika: ![alt text](img/TheBricks.png)
 - HTML
 - CSS
 - Java Script
-
-## 📝 Urejanje
-Za urejanje spletne strani za lastno uporabo, preprosto spremenite HTML, CSS, JavaScript kodo. Ne pozabite vključiti svojih slik, podrobnosti in povezav. Spremenite lahko tudi barvno shemo, pisavo ali pa dodate svoje elemente. 
-
+- 
 ## 🧪 Ustvaril
 Aljaz Jurjavcic
